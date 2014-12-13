@@ -1,0 +1,24 @@
+{
+  "name": "node-irc-server",
+  "version": "0.0.1",
+  "description": "a simple node irc server",
+  "main": "irc-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshux/node-irc-server.git"
+  },
+  "keywords": [
+    "irc",
+    "server",
+    "chat"
+  ],
+  "author": "Josh Wang",
+  "license": "New BSD",
+  "bugs": {
+    "url": "https://github.com/joshux/node-irc-server/issues"
+  },
+  "homepage": "https://github.com/joshux/node-irc-server"
+}
