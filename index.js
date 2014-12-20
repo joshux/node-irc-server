@@ -21,3 +21,25 @@ if(nodeIDconf !== parseInt(nodeID))
 var ircPort = conf['irc-port'];
 
 var clients = [];
+
+
+function Server(){
+  if(!(this instanceof Server))
+    return new Server();
+  net.Server.call(this, {allowHalfOpen: true});
+
+  this.on('connection',connectionListner); // net event: connectionListner(socket)
+  this.on('clientError', function(err, conn){ // orig http event , conn is the [socket] connection
+    conn.destroy(err);
+  });
+};
+util.inherits(Server, net.Server);
+exports.Server = Server;
+
+function connectionListner(socket){
+
+}
+
+exports.createServer = function(){
+  return new Server();
+};

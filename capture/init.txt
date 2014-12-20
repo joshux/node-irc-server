@@ -1,0 +1,87 @@
+CAP LS
+:hitchcock.freenode.net NOTICE * :*** Looking up your hostname...
+NICK joshux
+USER joshux joshux irc.freenode.net :Josh Wang
+:hitchcock.freenode.net NOTICE * :*** Checking Ident
+:hitchcock.freenode.net NOTICE * :*** No Ident response
+:hitchcock.freenode.net NOTICE * :*** Found your hostname
+:hitchcock.freenode.net CAP * LS :account-notify extended-join identify-msg multi-prefix sasl
+CAP REQ :identify-msg
+:hitchcock.freenode.net CAP joshux ACK :identify-msg 
+CAP END
+:hitchcock.freenode.net 001 joshux :Welcome to the freenode Internet Relay Chat Network joshux
+:hitchcock.freenode.net 002 joshux :Your host is hitchcock.freenode.net[31.13.222.109/8001], running version ircd-seven-1.1.3
+:hitchcock.freenode.net 003 joshux :This server was created Sat Oct 11 2014 at 13:43:24 UTC
+:hitchcock.freenode.net 004 joshux hitchcock.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+:hitchcock.freenode.net 005 joshux CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+:hitchcock.freenode.net 005 joshux CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+:hitchcock.freenode.net 005 joshux EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+:hitchcock.freenode.net 251 joshux :There are 169 users and 82164 invisible on 25 servers
+:hitchcock.freenode.net 252 joshux 26 :IRC Operators online
+:hitchcock.freenode.net 253 joshux 7 :unknown connection(s)
+:hitchcock.freenode.net 254 joshux 48952 :channels formed
+:hitchcock.freenode.net 255 joshux :I have 1995 clients and 1 servers
+:hitchcock.freenode.net 265 joshux 1995 4803 :Current local users 1995, max 4803
+:hitchcock.freenode.net 266 joshux 82333 101901 :Current global users 82333, max 101901
+:hitchcock.freenode.net 250 joshux :Highest connection count: 4804 (4803 clients) (624630 connections received)
+:hitchcock.freenode.net 375 joshux :- hitchcock.freenode.net Message of the Day - 
+:hitchcock.freenode.net 372 joshux :-  
+:hitchcock.freenode.net 372 joshux :- Welcome to hitchcock.freenode.net in Sofia, Bulgaria, EU, kindly sponsored by
+:hitchcock.freenode.net 372 joshux :- Neterra Communications (www.neterra.net)
+:hitchcock.freenode.net 372 joshux :-  
+:hitchcock.freenode.net 372 joshux :- HITCHCOCK, SIR ALFRED [1899 - 1980] Born in Essex,
+:hitchcock.freenode.net 372 joshux :- England, Sir Alfred Hitchcock was a noted film director
+:hitchcock.freenode.net 372 joshux :- and producer. Over a long career he pioneered many modern
+:hitchcock.freenode.net 372 joshux :- techniques in film-making, made more than 50 feature films,
+:hitchcock.freenode.net 372 joshux :- and influenced many present-day directors and producers.
+:hitchcock.freenode.net 372 joshux :-  
+:hitchcock.freenode.net 372 joshux :- Welcome to freenode - supporting the free and open source
+:hitchcock.freenode.net 372 joshux :- software communities since 1998.
+:hitchcock.freenode.net 372 joshux :-  
+:hitchcock.freenode.net 372 joshux :- **************************************************************
+:hitchcock.freenode.net 372 joshux :-                       SECURITY ALERT
+:hitchcock.freenode.net 372 joshux :-  
+:hitchcock.freenode.net 372 joshux :- Over the weekend of 13th-14th September freenode staff noticed
+:hitchcock.freenode.net 372 joshux :- some compromised binaries present on a number of servers. 
+:hitchcock.freenode.net 372 joshux :- The servers in question have been removed from the network and
+:hitchcock.freenode.net 372 joshux :- shut down.  However, it's possible that network traffic  -
+:hitchcock.freenode.net 372 joshux :- including SSL traffic - has been sniffed and passwords
+:hitchcock.freenode.net 372 joshux :- exposed.
+:hitchcock.freenode.net 372 joshux :-  
+:hitchcock.freenode.net 372 joshux :- We therefore recommend that all users change their nickserv 
+:hitchcock.freenode.net 372 joshux :- password(s) to a new value which is not shared with any
+:hitchcock.freenode.net 372 joshux :- other service.
+:hitchcock.freenode.net 372 joshux :-  
+:hitchcock.freenode.net 372 joshux :- You can do this with /msg nickserv set password newpasshere
+:hitchcock.freenode.net 372 joshux :-  
+:hitchcock.freenode.net 372 joshux :- Please note that investigation is ongoing to discover the root
+:hitchcock.freenode.net 372 joshux :- cause of the attack, and until this investigation is complete
+:hitchcock.freenode.net 372 joshux :- we cannot be 100% certain that all traces of the compromises 
+:hitchcock.freenode.net 372 joshux :- have been removed. We may have to ask you to change your  
+:hitchcock.freenode.net 372 joshux :- passwords again after analysis has completed.
+:hitchcock.freenode.net 372 joshux :-  
+:hitchcock.freenode.net 372 joshux :- Further details will appear on https://blog.freenode.net/
+:hitchcock.freenode.net 372 joshux :-  
+:hitchcock.freenode.net 372 joshux :- **************************************************************
+:hitchcock.freenode.net 372 joshux :-  
+:hitchcock.freenode.net 372 joshux :- By connecting to freenode you indicate that you have read and
+:hitchcock.freenode.net 372 joshux :- accept our policies as set out on http://www.freenode.net
+:hitchcock.freenode.net 372 joshux :- freenode runs an open proxy scanner. Please join #freenode for
+:hitchcock.freenode.net 372 joshux :- any network-related questions or queries, where a number of
+:hitchcock.freenode.net 372 joshux :- volunteer staff and helpful users will be happy to assist you.
+:hitchcock.freenode.net 372 joshux :-  
+:hitchcock.freenode.net 372 joshux :- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+:hitchcock.freenode.net 372 joshux :- together with like-minded FOSS enthusiasts for talks and
+:hitchcock.freenode.net 372 joshux :- real-life collaboration.
+:hitchcock.freenode.net 372 joshux :-  
+:hitchcock.freenode.net 372 joshux :- We would like to thank Private Internet Access
+:hitchcock.freenode.net 372 joshux :- (https://www.privateinternetaccess.com/) and the other
+:hitchcock.freenode.net 372 joshux :- organisations that help keep freenode and our other projects
+:hitchcock.freenode.net 372 joshux :- running for their sustained support.
+:hitchcock.freenode.net 372 joshux :-  
+:hitchcock.freenode.net 372 joshux :- In particular we would like to thank the sponsor
+:hitchcock.freenode.net 372 joshux :- of this server, details of which can be found above.
+:hitchcock.freenode.net 372 joshux :-  
+:hitchcock.freenode.net 376 joshux :End of /MOTD command.
+:joshux MODE joshux :+i
+:NickServ!NickServ@services. NOTICE joshux :+This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
