@@ -14,15 +14,19 @@ exports.test_initServer = function(test){
 };
 
 exports.test_ServerEchos = function(test){
-  var server = irc.createServer(NODE_ID, CONFIG_JSON);
-  server.listen(CONFIG_JSON['irc-port'],function(){
-  var conn = net.connect({port: CONFIG_JSON['irc-port']});
 
+  var server = irc.createServer(NODE_ID, CONFIG_JSON);
+
+  server.listen(CONFIG_JSON['irc-port'],function(){
+
+    /*var conn = net.connect({port: CONFIG_JSON['irc-port']});
+    conn.write('aaa');
     conn.on('data',function(buf){
-      test.equal('joshux2',buf.toString());
+      test.equal('joshux',buf.toString());
       conn.destroy();
       server.close();
       test.done();
-    });
+    });*/
+
   });
 };

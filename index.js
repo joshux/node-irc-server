@@ -1,7 +1,8 @@
 var util = require('util');
 var net = require('net');
 var fs = require('fs');
-
+var stream = require('stream');
+var events = require('events');
 function Server(nodeID, configJSON){
   if(!(this instanceof Server)){
     return new Server(nodeID, configJSON, requestListner);
@@ -23,6 +24,28 @@ exports.Server = Server;
 exports.createServer = function(nodeID,configJSON){
   return new Server(nodeID,configJSON);
 };
+function IrcState(){
+  this.initState = true;
+}
+function IrcParser(parseStream){
+  events.EventEmitter.call(this);
+
+  var self = this;
+  self.buffer = '';
+
+  parseStream.on('readable',function(){
+    var chunk = this.read();
+    self.buffer += (chunk ? chunk : '') ;
+    
+  });
+
+}
+util.inherits(IrcParser,events.EventEmitter);
+
 function connectionListner(socket){
-  socket.write('joshux2');
+  var state = new IrcState();
+  socket.on('end',function(){
+    console.log('client end');
+  });
+  var parser = new IrcParser(socket);
 }
