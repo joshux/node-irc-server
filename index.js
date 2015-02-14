@@ -46,13 +46,51 @@ function IrcParser(parseStream){
     
     var lineEndPos;
     while( (lineEndPos = chunk.search(/\r\n/)) !== -1) 
-      self.parse( self.buffer + chunk.slice(0,lineEndPos) ); // string + buffer = string
+      self.parseLine( self.buffer + chunk.slice(0,lineEndPos) ); // string + buffer = string
       chunk = chunk.slice(lineEndPos+2);
+      
       self.buffer = chunk;
     }
     self.buffer += chunk;
+    
+    
   });
 }
+var COMMANDS = [{
+  regex: /NICK/,
+  value: 'NICK'
+},{
+  regex: /USER/,
+  value: 'USER'
+},{
+  regex: /QUIT/,
+  value: 'QUIT'
+},{
+  regex: /JOIN/,
+  value: 'JOIN'
+},{
+  regex: /PART/,
+  value: 'PART'
+},{
+  regex: /LIST/,
+  value: 'LIST'
+},{
+  regex: /PRIVMSG/,
+  value: 'PRIVMSG'
+},{
+  regex: /WHO/,
+  value: 'WHO'
+}];
+IrcParser.prototype.parseLine = function(msgLine){
+  var self = this;
+  
+  var command;
+  command = 
+  
+  //self.emit('command',command,params)
+  //self.emit('parseError',..)
+};
+
 util.inherits(IrcParser,events.EventEmitter);
 
 function ClientController(state){
